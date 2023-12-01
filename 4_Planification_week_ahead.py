@@ -38,7 +38,7 @@ week_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
 count = 1
 # Looping through a moving week comprising 7 days
-while(count<7):
+while(count<6):
     planification_day += pd.Timedelta(days=1)
     nextday_str = planification_day.strftime('%A')
     nextday_day = planification_day.day
@@ -92,7 +92,7 @@ while(count<7):
                 dict_tmp['EVSE_Power'] = [df_evse['EVSE_Power'].loc[i]]
                 dict_tmp['Vehicle_Id'] = [df_waiting_list_tmp['Vehicle_Id'].loc[i]]
                 dict_tmp['Session_start_date'] = [datetime(nextday_year,nextday_month,nextday_day,13,0,0).strftime('%d/%m/%Y %H:%M:%S')]
-                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,19,0,0).strftime('%d/%m/%Y %H:%M:%S')]
+                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,18,0,0).strftime('%d/%m/%Y %H:%M:%S')]
                 dict_tmp['User_confirm'] = [True]
                 df_tmp = pd.DataFrame.from_dict(dict_tmp)
                 df_planner = pd.concat([df_planner, df_tmp], join='outer', ignore_index=True)
@@ -140,7 +140,7 @@ while(count<7):
                 dict_tmp['EVSE_Power'] = [df_evse['EVSE_Power'].loc[i]]
                 dict_tmp['Vehicle_Id'] = [df_waiting_list_tmp['Vehicle_Id'].loc[i]]
                 dict_tmp['Session_start_date'] = [datetime(nextday_year,nextday_month,nextday_day,13,0,0).strftime('%d/%m/%Y %H:%M:%S')]
-                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,19,0,0).strftime('%d/%m/%Y %H:%M:%S')]
+                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,18,0,0).strftime('%d/%m/%Y %H:%M:%S')]
                 dict_tmp['User_confirm'] = [True]
                 df_tmp = pd.DataFrame.from_dict(dict_tmp)
                 df_planner = pd.concat([df_planner, df_tmp], join='outer', ignore_index=True)
@@ -188,7 +188,7 @@ while(count<7):
                 dict_tmp['EVSE_Power'] = [df_evse['EVSE_Power'].loc[i]]
                 dict_tmp['Vehicle_Id'] = [df_waiting_list_tmp['Vehicle_Id'].loc[i]]
                 dict_tmp['Session_start_date'] = [datetime(nextday_year,nextday_month,nextday_day,13,0,0).strftime('%d/%m/%Y %H:%M:%S')]
-                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,19,0,0).strftime('%d/%m/%Y %H:%M:%S')]
+                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,18,0,0).strftime('%d/%m/%Y %H:%M:%S')]
                 dict_tmp['User_confirm'] = [True]
                 df_tmp = pd.DataFrame.from_dict(dict_tmp)
                 df_planner = pd.concat([df_planner, df_tmp], join='outer', ignore_index=True)
@@ -235,7 +235,7 @@ while(count<7):
                 dict_tmp['EVSE_Power'] = [df_evse['EVSE_Power'].loc[i]]
                 dict_tmp['Vehicle_Id'] = [df_waiting_list_tmp['Vehicle_Id'].loc[i]]
                 dict_tmp['Session_start_date'] = [datetime(nextday_year,nextday_month,nextday_day,13,0,0).strftime('%d/%m/%Y %H:%M:%S')]
-                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,19,0,0).strftime('%d/%m/%Y %H:%M:%S')]
+                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,18,0,0).strftime('%d/%m/%Y %H:%M:%S')]
                 dict_tmp['User_confirm'] = [True]
                 df_tmp = pd.DataFrame.from_dict(dict_tmp)
                 df_planner = pd.concat([df_planner, df_tmp], join='outer', ignore_index=True)
@@ -282,7 +282,7 @@ while(count<7):
                 dict_tmp['EVSE_Power'] = [df_evse['EVSE_Power'].loc[i]]
                 dict_tmp['Vehicle_Id'] = [df_waiting_list_tmp['Vehicle_Id'].loc[i]]
                 dict_tmp['Session_start_date'] = [datetime(nextday_year,nextday_month,nextday_day,13,0,0).strftime('%d/%m/%Y %H:%M:%S')]
-                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,19,0,0).strftime('%d/%m/%Y %H:%M:%S')]
+                dict_tmp['Session_end_date'] = [datetime(nextday_year,nextday_month,nextday_day,18,0,0).strftime('%d/%m/%Y %H:%M:%S')]
                 dict_tmp['User_confirm'] = [True]
                 df_tmp = pd.DataFrame.from_dict(dict_tmp)
                 df_planner = pd.concat([df_planner, df_tmp], join='outer', ignore_index=True)
